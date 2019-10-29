@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Add book to list</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+        <ion-row>
+          <ion-col size-md ="6" offset-md = "3">
+            <ion-card>
+              <ion-card-header>
+              <ion-card-title>write Name and Writer</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+            <ion-card-content>
+              <ion-item>
+                <ion-label position = "floating">
+                  Name of Book
+                </ion-label>
+                <ion-input type ="text" [(ngModel)] = "nameText" >
+                </ion-input>
+              </ion-item>
+              <ion-item>
+                
+                  <ion-label position = "floating">
+                    writer Name
+                  </ion-label>
+                  <ion-input type ="text" [(ngModel)] ="authorText">
+                  </ion-input>
+                </ion-item>
+                <ion-button (click)="addBook()">
+                  <ion-icon slot ="start" name ="add"></ion-icon>
+                  Add book 
+                </ion-button >
+            </ion-card-content>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    
+
+</ion-content>

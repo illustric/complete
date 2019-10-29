@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>List of my books</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card *ngFor = "let item of books">
+        <ion-item (click)="changeUrl(item)">
+          <ion-card-content>
+        <ion-label>
+          {{item?.name}} | {{item?.author}}
+        </ion-label>
+      </ion-card-content>
+    </ion-item>
+      </ion-card>
+
+</ion-content>
